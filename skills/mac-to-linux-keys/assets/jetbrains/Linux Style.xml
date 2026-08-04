@@ -1,0 +1,59 @@
+<keymap version="1" name="Linux Style" parent="VSCode">
+  <action id="ActivateBookmarksToolWindow" />
+  <action id="ActivateDebugToolWindow" />
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateProjectToolWindow" />
+  <action id="ActivateRunToolWindow" />
+  <action id="ActivateServicesToolWindow" />
+  <action id="ActivateStructureToolWindow" />
+  <action id="ActivateTerminalToolWindow" />
+  <action id="ActivateVersionControlToolWindow" />
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="meta left" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+    <keyboard-shortcut first-keystroke="ctrl g" />
+  </action>
+  <action id="FindPrevious">
+    <keyboard-shortcut first-keystroke="shift f3" />
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="shift f12" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="meta right" />
+  </action>
+  <action id="GoToTab1">
+    <keyboard-shortcut first-keystroke="meta 1" />
+  </action>
+  <action id="GoToTab2">
+    <keyboard-shortcut first-keystroke="meta 2" />
+  </action>
+  <action id="GoToTab3">
+    <keyboard-shortcut first-keystroke="meta 3" />
+  </action>
+  <action id="GoToTab4">
+    <keyboard-shortcut first-keystroke="meta 4" />
+  </action>
+  <action id="GoToTab5">
+    <keyboard-shortcut first-keystroke="meta 5" />
+  </action>
+  <action id="GoToTab6">
+    <keyboard-shortcut first-keystroke="meta 6" />
+  </action>
+  <action id="GoToTab7">
+    <keyboard-shortcut first-keystroke="meta 7" />
+  </action>
+  <action id="GoToTab8">
+    <keyboard-shortcut first-keystroke="meta 8" />
+  </action>
+  <action id="GoToTab9">
+    <keyboard-shortcut first-keystroke="meta 9" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="f12" />
+    <mouse-shortcut keystroke="control button1" />
+  </action>
+</keymap>

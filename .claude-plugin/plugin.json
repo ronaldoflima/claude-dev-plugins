@@ -1,0 +1,8 @@
+{
+  "name": "claude-dev-plugins",
+  "version": "0.1.0",
+  "description": "Coleção pessoal de plugins/skills para Claude Code.",
+  "author": {
+    "name": "Ronaldo Lima"
+  }
+}

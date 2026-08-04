@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  hidutil Keyboard Remapping LaunchAgent
+
+  This provides basic key remapping at the system level using hidutil.
+  It's a lightweight alternative/complement to Karabiner-Elements.
+
+  Common use cases:
+  - Swap Caps Lock with Control
+  - Swap Option and Command on external keyboards
+
+  To install:
+  1. Copy to ~/Library/LaunchAgents/
+  2. Run: launchctl load ~/Library/LaunchAgents/hidutil-remap.plist
+
+  To uninstall:
+  1. Run: launchctl unload ~/Library/LaunchAgents/hidutil-remap.plist
+  2. Delete the plist file
+
+  Key codes reference (hexadecimal):
+  - 0x700000039: Caps Lock
+  - 0x7000000E0: Left Control
+  - 0x7000000E1: Left Shift
+  - 0x7000000E2: Left Option
+  - 0x7000000E3: Left Command
+  - 0x7000000E4: Right Control
+  - 0x7000000E5: Right Shift
+  - 0x7000000E6: Right Option
+  - 0x7000000E7: Right Command
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.linux-to-macos.hidutil-remap</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/hidutil</string>
+        <string>property</string>
+        <string>--set</string>
+        <string>{"UserKeyMapping":[
+            {
+                "HIDKeyboardModifierMappingSrc": 0x700000039,
+                "HIDKeyboardModifierMappingDst": 0x7000000E0
+            }
+        ]}</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <false/>
+</dict>
+</plist>

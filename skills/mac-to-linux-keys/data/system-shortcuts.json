@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "description": "Atalhos do macOS que não podem ser desativados ou têm comportamento especial",
+  "irremovable": [
+    {
+      "id": "macos-cmd-tab",
+      "shortcut": { "key": "tab", "modifiers": ["cmd"] },
+      "action": "App Switcher",
+      "can_disable": false,
+      "workaround": "Usar AltTab app para customizar comportamento"
+    },
+    {
+      "id": "macos-cmd-space",
+      "shortcut": { "key": "space", "modifiers": ["cmd"] },
+      "action": "Spotlight",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Spotlight"
+    },
+    {
+      "id": "macos-cmd-q",
+      "shortcut": { "key": "q", "modifiers": ["cmd"] },
+      "action": "Quit Application",
+      "can_disable": false,
+      "workaround": null
+    },
+    {
+      "id": "macos-cmd-h",
+      "shortcut": { "key": "h", "modifiers": ["cmd"] },
+      "action": "Hide Application",
+      "can_disable": false,
+      "workaround": null
+    },
+    {
+      "id": "macos-ctrl-cmd-q",
+      "shortcut": { "key": "q", "modifiers": ["ctrl", "cmd"] },
+      "action": "Lock Screen",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts"
+    },
+    {
+      "id": "macos-cmd-shift-3",
+      "shortcut": { "key": "3", "modifiers": ["cmd", "shift"] },
+      "action": "Screenshot (Full Screen)",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Screenshots"
+    },
+    {
+      "id": "macos-cmd-shift-4",
+      "shortcut": { "key": "4", "modifiers": ["cmd", "shift"] },
+      "action": "Screenshot (Selection)",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Screenshots"
+    },
+    {
+      "id": "macos-cmd-shift-5",
+      "shortcut": { "key": "5", "modifiers": ["cmd", "shift"] },
+      "action": "Screenshot Options",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Screenshots"
+    }
+  ],
+  "mission_control": [
+    {
+      "id": "mc-ctrl-up",
+      "shortcut": { "key": "up_arrow", "modifiers": ["ctrl"] },
+      "action": "Mission Control",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Mission Control"
+    },
+    {
+      "id": "mc-ctrl-down",
+      "shortcut": { "key": "down_arrow", "modifiers": ["ctrl"] },
+      "action": "Application Windows",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Mission Control"
+    },
+    {
+      "id": "mc-ctrl-left",
+      "shortcut": { "key": "left_arrow", "modifiers": ["ctrl"] },
+      "action": "Move Space Left",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Mission Control"
+    },
+    {
+      "id": "mc-ctrl-right",
+      "shortcut": { "key": "right_arrow", "modifiers": ["ctrl"] },
+      "action": "Move Space Right",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Mission Control"
+    }
+  ],
+  "input_sources": [
+    {
+      "id": "input-ctrl-space",
+      "shortcut": { "key": "space", "modifiers": ["ctrl"] },
+      "action": "Select Previous Input Source",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Input Sources"
+    },
+    {
+      "id": "input-ctrl-option-space",
+      "shortcut": { "key": "space", "modifiers": ["ctrl", "option"] },
+      "action": "Select Next Input Source",
+      "can_disable": true,
+      "disable_path": "System Settings > Keyboard > Keyboard Shortcuts > Input Sources"
+    }
+  ]
+}

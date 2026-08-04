@@ -1,0 +1,226 @@
+{
+  "version": "1.0",
+  "known": [
+    {
+      "id": "ctrl-c-terminal",
+      "type": "intentional",
+      "shortcut": {
+        "key": "c",
+        "modifiers": [
+          "ctrl"
+        ]
+      },
+      "between": [
+        "karabiner",
+        "terminals"
+      ],
+      "description": "Ctrl+C precisa enviar SIGINT em terminais",
+      "resolution": "Karabiner exclui terminais do remapeamento Ctrl+C -> Cmd+C",
+      "status": "resolved"
+    },
+    {
+      "id": "ctrl-v-terminal",
+      "type": "intentional",
+      "shortcut": {
+        "key": "v",
+        "modifiers": [
+          "ctrl"
+        ]
+      },
+      "between": [
+        "karabiner",
+        "terminals"
+      ],
+      "description": "Alguns terminais usam Ctrl+V para verbose mode ou paste literal",
+      "resolution": "Karabiner exclui terminais do remapeamento Ctrl+V -> Cmd+V",
+      "status": "resolved"
+    },
+    {
+      "id": "alt-1-9-ide",
+      "type": "intentional",
+      "shortcut": {
+        "key": "1-9",
+        "modifiers": [
+          "alt"
+        ]
+      },
+      "between": [
+        "karabiner",
+        "jetbrains"
+      ],
+      "description": "IDEs JetBrains usam Alt+1-9 para tool windows",
+      "resolution": "JetBrains usa keymap próprio 'Linux Style', Karabiner exclui JetBrains",
+      "status": "resolved"
+    },
+    {
+      "id": "ctrl-space-input",
+      "type": "system",
+      "shortcut": {
+        "key": "space",
+        "modifiers": [
+          "ctrl"
+        ]
+      },
+      "between": [
+        "macos",
+        "ide"
+      ],
+      "description": "macOS usa Ctrl+Space para trocar input source, IDEs usam para autocomplete",
+      "resolution": "Desativar em System Settings > Keyboard > Keyboard Shortcuts > Input Sources",
+      "status": "manual_required",
+      "manual_steps": [
+        "Abrir System Settings",
+        "Ir para Keyboard > Keyboard Shortcuts",
+        "Clicar em Input Sources",
+        "Desmarcar 'Select the previous input source'"
+      ],
+      "verify_hotkeys": [
+        "60"
+      ]
+    },
+    {
+      "id": "ctrl-arrows-mission",
+      "type": "system",
+      "shortcut": {
+        "key": "arrows",
+        "modifiers": [
+          "ctrl"
+        ]
+      },
+      "between": [
+        "macos",
+        "ide"
+      ],
+      "description": "macOS usa Ctrl+Arrows para Mission Control, IDEs usam para navegação",
+      "resolution": "Desativar Mission Control shortcuts em System Settings",
+      "status": "manual_required",
+      "manual_steps": [
+        "Abrir System Settings",
+        "Ir para Keyboard > Keyboard Shortcuts",
+        "Clicar em Mission Control",
+        "Desmarcar atalhos Ctrl+Arrow"
+      ],
+      "verify_hotkeys": [
+        "32",
+        "33",
+        "79",
+        "80",
+        "81",
+        "82"
+      ]
+    },
+    {
+      "id": "f11-fullscreen",
+      "type": "intentional",
+      "shortcut": {
+        "key": "f11",
+        "modifiers": []
+      },
+      "between": [
+        "macos",
+        "browsers"
+      ],
+      "description": "macOS usa F11 para Show Desktop, browsers usam para fullscreen",
+      "resolution": "Karabiner pode mapear F11 para Ctrl+Cmd+F (fullscreen macOS nativo)",
+      "status": "resolved"
+    },
+    {
+      "id": "cmd-tab-alttab",
+      "type": "intentional",
+      "shortcut": {
+        "key": "tab",
+        "modifiers": [
+          "cmd"
+        ]
+      },
+      "between": [
+        "macos",
+        "alttab"
+      ],
+      "description": "Contexts intercepta Cmd+Tab para mostrar todas as janelas (estilo Linux)",
+      "resolution": "Contexts é configurado para substituir o comportamento padrão do Cmd+Tab",
+      "status": "resolved",
+      "apps": [
+        "contexts"
+      ]
+    },
+    {
+      "id": "alt-arrows-jetbrains",
+      "type": "intentional",
+      "shortcut": {
+        "key": "arrows",
+        "modifiers": [
+          "alt"
+        ]
+      },
+      "between": [
+        "karabiner",
+        "jetbrains"
+      ],
+      "description": "JetBrains usa Alt+Left/Right para navegar histórico",
+      "resolution": "Keymap 'Linux Style' mapeia corretamente usando meta se Alt/Cmd trocados",
+      "status": "resolved"
+    },
+    {
+      "id": "ctrl-shift-esc",
+      "type": "habit",
+      "shortcut": {
+        "key": "escape",
+        "modifiers": [
+          "ctrl",
+          "shift"
+        ]
+      },
+      "between": [
+        "windows-habit",
+        "macos"
+      ],
+      "description": "No Windows abre Task Manager, macOS não tem equivalente direto",
+      "resolution": "Karabiner pode mapear para Cmd+Option+Escape (Force Quit) ou Activity Monitor",
+      "status": "optional"
+    },
+    {
+      "id": "print-screen",
+      "type": "habit",
+      "shortcut": {
+        "key": "print_screen",
+        "modifiers": []
+      },
+      "between": [
+        "linux-habit",
+        "macos"
+      ],
+      "description": "Linux/Windows usa Print Screen para screenshot",
+      "resolution": "Karabiner mapeia F13 ou tecla dedicada para Cmd+Shift+3/4/5",
+      "status": "optional"
+    }
+  ],
+  "detected": [],
+  "unresolvable": [
+    {
+      "id": "macos-cmd-tab",
+      "shortcut": {
+        "key": "tab",
+        "modifiers": [
+          "cmd"
+        ]
+      },
+      "reason": "macOS não permite desativar Cmd+Tab completamente",
+      "workaround": "Usar Contexts (ou AltTab) para customizar comportamento e mostrar todas as janelas",
+      "user_reported": false
+    },
+    {
+      "id": "macos-force-quit",
+      "shortcut": {
+        "key": "escape",
+        "modifiers": [
+          "cmd",
+          "option"
+        ]
+      },
+      "reason": "Force Quit é hardcoded no macOS",
+      "workaround": null,
+      "user_reported": false
+    }
+  ]
+}
