@@ -1,0 +1,6 @@
+{
+  "name": "mac-to-linux-keys",
+  "version": "0.1.0",
+  "description": "Migra atalhos de teclado do Ubuntu/Linux para macOS usando Karabiner-Elements, hidutil e ferramentas complementares.",
+  "author": { "name": "Ronaldo Lima" }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "claude-dev-plugins",
+  "description": "Coleção pessoal de plugins/skills para Claude Code.",
+  "owner": { "name": "Ronaldo Lima" },
+  "plugins": [
+    {
+      "name": "mac-to-linux-keys",
+      "description": "Migra atalhos de teclado do Ubuntu/Linux para macOS usando Karabiner-Elements, hidutil e ferramentas complementares.",
+      "source": "./plugins/mac-to-linux-keys",
+      "category": "productivity"
+    }
+  ]
+}

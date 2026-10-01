@@ -6,7 +6,7 @@ Coleção pessoal de plugins/skills para [Claude Code](https://claude.com/claude
 
 ```
 /plugin marketplace add ronaldoflima/claude-dev-plugins
-/plugin install mac-to-linux-keys
+/plugin install mac-to-linux-keys@claude-dev-plugins
 ```
 
 ## Skills
